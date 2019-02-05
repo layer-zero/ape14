@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python2
 
 myList = ['One', 'Two', 'Three', 'Four', 'Five', 'Six']
 

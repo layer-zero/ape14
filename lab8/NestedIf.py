@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python2
 
 fav_color = raw_input('What is your favorit color? ')
 
