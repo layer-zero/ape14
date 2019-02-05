@@ -1,0 +1,8 @@
+#!/usr/bin/python
+
+fav_color = raw_input('What is your favorit color? ')
+
+if fav_color == 'blue':
+	print 'Right, off you go!'
+else:
+	print 'You are cast into the gorge of eternal peril.'
