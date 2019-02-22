@@ -4,6 +4,7 @@ n = 100
 
 
 def fibonacci(n):
+    # This recursive function returns a list of the first n Fibonacci numbers
     if n == 1:
         return [0]
     elif n == 2:
