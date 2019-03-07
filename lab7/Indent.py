@@ -3,8 +3,7 @@
 var = 1
 
 if var == 1:
-	print "True"
+    print "True"
 else:
-	print "False"
-	print "I fail at Python"
-
+    print "False"
+    print "I fail at Python"
