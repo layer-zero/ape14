@@ -14,6 +14,6 @@ switch = jsonrpclib.Server(eapi_url)
 try:
     response = switch.runCmds(1, commands)
 except jsonrpclib.jsonrpc.ProtocolError as error:
-    print error
+    print 'Error code {}: {}'.format(error[0][0], error[0][1])
 else:
     print 'The version is ' + response[0]['version']

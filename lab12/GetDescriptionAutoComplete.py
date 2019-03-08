@@ -15,4 +15,5 @@ switch = Server(eapi_url)
 
 response = switch.runCmds(version=1, cmds=commands, autoComplete=True)
 
-print 'The description on interface {} is {}'.format(interface, response[0]['interfaces'][interface]['description'])
+description = response[0]['interfaces'][interface]['description']
+print 'The description on interface {} is {}'.format(interface, description)
