@@ -2,5 +2,9 @@
 
 
 with open('Lumberjack.txt', 'a') as lumberfile:
-    extralines = 'He cuts down trees, he eats his lunch,\nHe goes to the lava-try.\n'
+    # Using "()" allows you to split string literals across lines with
+    # arbitrary indentation for better readability and PEP-8 compliance.
+    # Note that "extralines" is still a simple string.
+    extralines = ('He cuts down trees, he eats his lunch,\n'
+                  'He goes to the lava-try.\n')
     lumberfile.write(extralines)
