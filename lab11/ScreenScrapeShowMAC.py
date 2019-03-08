@@ -6,7 +6,12 @@ hostname = '10.0.0.6'
 username = 'Script'
 password = 'Arista'
 
-c = pexpect.spawn('ssh ' + '-l ' + username + ' ' + hostname)
+ssh_options = ['-l ' + username,
+               '-o UserKnownHostsFile=/dev/null',
+               '-o StrictHostKeyChecking=no']
+ssh_command = 'ssh ' + ' '.join(ssh_options) + ' ' + hostname
+
+c = pexpect.spawn(ssh_command)
 
 c.expect('Password')
 c.sendline(password)
